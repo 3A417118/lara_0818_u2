@@ -17,3 +17,5 @@ Route::get('/', function () {
 Route::get('home',function(){
     return view('home.index');
 });
+
+//重新上傳
