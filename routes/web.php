@@ -15,7 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('home',function(){
-    return view('home.index');
+    return view('home');
 });
 
-//重新上傳
+
+
+Route::get('hello/{name?}',['as'=>'hello.index','uses'=>'HelloController@index']);
